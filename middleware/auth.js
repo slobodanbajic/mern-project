@@ -5,7 +5,6 @@ const { JWT_SECRET } = config;
 
 module.exports = (req, res, next) => {
   const token = req.header("x-auth-token");
-
   if (!token)
     return res.status(401).json({ msg: "No token, authorizaton denied" });
 
