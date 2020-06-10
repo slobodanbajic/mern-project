@@ -1,0 +1,1 @@
+export const REST_PATH = "localhost:3000";
